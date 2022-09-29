@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Righteous", cursive;
+  background-color: #5a595b;
+}
+
+#main {
+  width: 300px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 25vh;
+  border-radius: 5%;
+  overflow: hidden;
+  transition: box-shadow 1s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.55);
+}
+#pic {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+#main:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px 8px rgba(110, 62, 69, 0.55);
+}
+
+#save {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background-color: red;
+  border-radius: 20px 20px;
+  text-align: center;
+  color: white;
+  line-height: 40px;
+  transform: translateX(100px) rotate(90deg);
+  transition: transform 0.3s;
+}
+
+#dotdotdot {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transform: translateY(100px) rotate(180deg);
+  transition: transform 0.3s;
+}
+#dotdotdot .fa-solid {
+  position: relative;
+  top: 12px;
+  left: 10px;
+}
+#up {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 15px;
+  right: 60px;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transform: translateY(100px) rotate(180deg);
+  transition: transform 0.3s;
+}
+#up .fa-solid {
+  position: relative;
+  top: 12px;
+  left: 10px;
+}
+
+#long {
+  width: 170px;
+  height: 40px;
+  position: absolute;
+  bottom: 15px;
+  right: 112px;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 20px 20px;
+  transform: translateY(200px) rotate(90deg);
+  transition: transform 0.3s;
+}
+
+#long .fa-solid {
+  position: relative;
+  top: 12px;
+  left: 10px;
+}
+#pin {
+  position: relative;
+  top: -15px;
+  left: 37px;
+  font-size: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 125px;
+}
+#overlay:hover #up {
+  transform: translateY(0px);
+  transition: transform 0.3s;
+}
+
+#overlay:hover #dotdotdot {
+  transform: translateY(0px);
+  transition: transform 0.3s;
+}
+#overlay:hover #long {
+  transform: translateY(0px);
+  transition: transform 0.3s;
+}
+#overlay:hover #save {
+  transform: translateX(0px);
+  transition: transform 0.3s;
+}
